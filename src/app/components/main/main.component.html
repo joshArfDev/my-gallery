@@ -1,0 +1,16 @@
+<button (click)="onClick()" class="btn btn-outline-danger mt-5 logout">Cerrar Sesión</button>
+
+
+<link rel="stylesheet" href="/src/app/components/main/main.component.css">
+
+
+<div class="contenedor">
+  <input class="input" type="file" (change)="uploadImage($event)" >
+</div>
+
+
+<div class="images">
+
+  <img class="bordImage" [src]="image" *ngFor="let image of images" width="200">
+
+</div>  
